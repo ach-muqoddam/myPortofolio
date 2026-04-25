@@ -19,7 +19,7 @@ const Hero = () => {
             Programmer, DevOps & Cybersecurity
           </h3>
           <p style={{ fontSize: '1.125rem', color: 'var(--muted-text)', marginBottom: '2rem', maxWidth: '500px' }}>
-            Membangun sistem yang aman, skalabel, dan efisien. Menggabungkan praktik pengembangan perangkat lunak terbaik dengan keamanan dan otomatisasi infrastruktur.
+            Lulusan S1 Sistem Informasi dari Universitas Trunojoyo yang bersemangat untuk berkarir di bidang IT. Berbekal kemampuan orientasi detail dan antusiasme tinggi dalam mempelajari hal keahlian teknis.
           </p>
 
           <div style={{ display: 'flex', gap: '1rem', marginBottom: '3rem' }}>

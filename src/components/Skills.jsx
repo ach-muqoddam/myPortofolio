@@ -4,28 +4,25 @@ const skillCategories = [
   {
     title: 'Development (Programmer)',
     skills: [
-      { name: 'React & Next.js', level: 90 },
+      { name: 'React & Next.js', level: 85 },
       { name: 'Node.js & Express', level: 85 },
-      { name: 'Python', level: 80 },
-      { name: 'Go', level: 70 },
+      { name: 'Python', level: 70 },
     ]
   },
   {
-    title: 'DevOps & CI/CD',
+    title: 'DevOps',
     skills: [
-      { name: 'Docker & Kubernetes', level: 85 },
-      { name: 'Jenkins / GitHub Actions', level: 90 },
-      { name: 'AWS / Azure', level: 80 },
-      { name: 'Terraform', level: 75 },
+      { name: 'Docker', level: 85 },
+      { name: 'Jenkins / GitHub Actions', level: 80 },
+      { name: 'SysAdmin', level: 85 },
     ]
   },
   {
     title: 'Cybersecurity',
     skills: [
-      { name: 'Penetration Testing', level: 80 },
-      { name: 'Web Security (OWASP)', level: 85 },
-      { name: 'Network Security', level: 75 },
-      { name: 'Wazuh & SIEM', level: 80 },
+      { name: 'SOC Analyst', level: 85 },
+      { name: 'Security Engineer)', level: 85 },
+      { name: 'Defensive Security', level: 85 },
     ]
   }
 ];
@@ -35,10 +32,10 @@ const Skills = () => {
     <section id="skills" style={{ backgroundColor: 'var(--secondary-bg)' }}>
       <div className="container">
         <h2 className="section-title">Keahlian Utama</h2>
-        
+
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
           {skillCategories.map((category, idx) => (
-            <motion.div 
+            <motion.div
               key={idx}
               className="card"
               initial={{ opacity: 0, y: 30 }}
@@ -49,7 +46,7 @@ const Skills = () => {
               <h3 style={{ fontSize: '1.25rem', marginBottom: '1.5rem', color: 'var(--primary)', borderBottom: '1px solid var(--border-color)', paddingBottom: '0.5rem' }}>
                 {category.title}
               </h3>
-              
+
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                 {category.skills.map((skill, i) => (
                   <div key={i}>
@@ -58,7 +55,7 @@ const Skills = () => {
                       <span style={{ color: 'var(--muted-text)' }}>{skill.level}%</span>
                     </div>
                     <div style={{ width: '100%', height: '8px', backgroundColor: 'var(--bg-color)', borderRadius: '4px', overflow: 'hidden' }}>
-                      <motion.div 
+                      <motion.div
                         initial={{ width: 0 }}
                         whileInView={{ width: `${skill.level}%` }}
                         viewport={{ once: true }}

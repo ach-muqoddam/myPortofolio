@@ -6,7 +6,7 @@ const Contact = () => {
     <section id="contact" style={{ backgroundColor: 'var(--bg-color)' }}>
       <div className="container">
         <h2 className="section-title">Hubungi Saya</h2>
-        
+
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '3rem' }}>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -26,17 +26,17 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 style={{ color: 'var(--muted-text)', fontSize: '0.875rem' }}>Email</h4>
-                  <p style={{ color: 'var(--text-color)', fontWeight: '500' }}>hello@johndoe.com</p>
+                  <p style={{ color: 'var(--text-color)', fontWeight: '500' }}>ach.adam04@gmail.com</p>
                 </div>
               </div>
-              
+
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
                 <div style={{ width: '50px', height: '50px', backgroundColor: 'var(--secondary-bg)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--primary)', boxShadow: 'var(--shadow)' }}>
                   <Phone size={24} />
                 </div>
                 <div>
                   <h4 style={{ color: 'var(--muted-text)', fontSize: '0.875rem' }}>Telepon</h4>
-                  <p style={{ color: 'var(--text-color)', fontWeight: '500' }}>+62 812 3456 7890</p>
+                  <p style={{ color: 'var(--text-color)', fontWeight: '500' }}>+62 813 5927 4120</p>
                 </div>
               </div>
 
@@ -46,7 +46,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 style={{ color: 'var(--muted-text)', fontSize: '0.875rem' }}>Lokasi</h4>
-                  <p style={{ color: 'var(--text-color)', fontWeight: '500' }}>Jakarta, Indonesia</p>
+                  <p style={{ color: 'var(--text-color)', fontWeight: '500' }}>Sampang, Jawa Timur, Indonesia</p>
                 </div>
               </div>
             </div>
@@ -69,17 +69,17 @@ const Contact = () => {
                   <input type="email" className="form-control" placeholder="Masukkan email Anda" required />
                 </div>
               </div>
-              
+
               <div className="form-group">
                 <label className="form-label">Subjek</label>
                 <input type="text" className="form-control" placeholder="Subjek pesan" required />
               </div>
-              
+
               <div className="form-group">
                 <label className="form-label">Pesan</label>
                 <textarea className="form-control" placeholder="Tulis pesan Anda di sini..." required></textarea>
               </div>
-              
+
               <button type="submit" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
                 Kirim Pesan <Send size={18} />
               </button>

@@ -20,13 +20,13 @@ const Navbar = ({ theme, toggleTheme }) => {
       <div className="container">
         <a href="#home" className="logo" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
           <Terminal size={28} />
-          <span>DevSecOps</span>
+          <span>myPortofolio</span>
         </a>
 
         <div className={`nav-links ${isOpen ? 'active' : ''}`}>
           {navLinks.map((link) => (
-            <a 
-              key={link.name} 
+            <a
+              key={link.name}
               href={link.href}
               onClick={() => setIsOpen(false)}
             >
