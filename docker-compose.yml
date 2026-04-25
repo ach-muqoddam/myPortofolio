@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  myportofolio-app:
+    container_name: myPortofolio-container
+    build: .
+    ports:
+      - "3081:80"
+    restart: unless-stopped
+    networks:
+      - falcon-app
+
+networks:
+  falcon-app:
+    external: true
