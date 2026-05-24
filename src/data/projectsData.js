@@ -12,7 +12,7 @@ export const projectsData = [
   },
   {
     title: 'Keamanan Infrastruktur',
-    description: 'Infrastruktur Keamanan menggunakan Wazuh untuk memvisualisasikan hasil pemindaian kerentanan sistem.',
+    description: 'Infrastruktur Keamanan untuk memvisualisasikan hasil pemindaian kerentanan sistem.',
     image: projectImage2,
     tags: ['Wazuh'],
     github: '#',
