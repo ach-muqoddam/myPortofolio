@@ -1,33 +1,7 @@
 import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
-
-const projects = [
-  {
-    title: 'Portal Sampang Satu Data',
-    description: 'Aplikasi portal data terintegrasi. Menggunakan React untuk frontend, serta Docker untuk kontainerisasi. Mengintegrasikan Wazuh untuk memantau keamanan.',
-    image: 'https://images.unsplash.com/photo-1563206767-5b18f218e8de?q=80&w=2069&auto=format&fit=crop',
-    tags: ['React', 'Docker'],
-    github: '#',
-    live: 'https://satudata.sampangkab.go.id/'
-  },
-  // {
-  //   title: 'Otomatisasi CI/CD Pipeline',
-  //   description: 'Membangun pipeline CI/CD lengkap menggunakan GitHub Actions dan npm registry untuk deploy aplikasi secara otomatis dengan pemindaian keamanan (SAST/DAST) sebelum rilis.',
-  //   image: 'https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=2088&auto=format&fit=crop',
-  //   tags: ['GitHub Actions', 'NPM', 'Bash', 'Security'],
-  //   github: '#',
-  //   live: '#'
-  // },
-  {
-    title: 'Keamanan Infrastruktur',
-    description: 'Infrastruktur Keamanan menggunakan untuk memvisualisasikan hasil pemindaian kerentanan sistem.',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop',
-    tags: ['Wazuh'],
-    github: '#',
-    live: '#'
-  }
-];
+import { projectsData } from '../data/projectsData';
 
 const Projects = () => {
   return (
@@ -36,7 +10,7 @@ const Projects = () => {
         <h2 className="section-title">Karya & Proyek Terbaru</h2>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem' }}>
-          {projects.map((project, idx) => (
+          {projectsData.map((project, idx) => (
             <motion.div
               key={idx}
               className="card"
@@ -46,12 +20,12 @@ const Projects = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
             >
-              <div style={{ height: '200px', overflow: 'hidden' }}>
+              <div style={{ aspectRatio: '16/9', overflow: 'hidden', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
                 <img
                   src={project.image}
                   alt={project.title}
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.3s ease' }}
-                  onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.1)'}
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top', transition: 'transform 0.5s ease' }}
+                  onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
                   onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
                 />
               </div>

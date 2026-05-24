@@ -20,7 +20,7 @@ const Navbar = ({ theme, toggleTheme }) => {
       <div className="container">
         <a href="#home" className="logo" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
           <Terminal size={28} />
-          <span>myPortofolio</span>
+          <span>Portofolio</span>
         </a>
 
         <div className={`nav-links ${isOpen ? 'active' : ''}`}>

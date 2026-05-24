@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import heroImage2 from '../assets/heroImg2.JPG';
 
 const About = () => {
   return (
@@ -15,7 +16,7 @@ const About = () => {
             <div style={{ position: 'relative' }}>
               <div style={{ position: 'absolute', top: '-15px', left: '-15px', width: '100%', height: '100%', border: '4px solid var(--primary)', borderRadius: '1rem', zIndex: 0 }}></div>
               <img
-                src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070&auto=format&fit=crop"
+                src={heroImage2}
                 alt="Working"
                 style={{ width: '100%', borderRadius: '1rem', position: 'relative', zIndex: 1, boxShadow: 'var(--shadow)' }}
               />

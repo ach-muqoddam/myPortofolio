@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Mail } from 'lucide-react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import heroImage1 from '../assets/heroImg1.JPG';
 
 const Hero = () => {
   return (
@@ -16,7 +17,7 @@ const Hero = () => {
             ACH. MUQODDAM
           </h1>
           <h3 style={{ fontSize: '2rem', color: 'var(--muted-text)', marginBottom: '1.5rem' }}>
-            Programmer, DevOps & Cybersecurity
+            DevSecOps Engineer
           </h3>
           <p style={{ fontSize: '1.125rem', color: 'var(--muted-text)', marginBottom: '2rem', maxWidth: '500px' }}>
             Lulusan S1 Sistem Informasi dari Universitas Trunojoyo yang bersemangat untuk berkarir di bidang IT. Berbekal kemampuan orientasi detail dan antusiasme tinggi dalam mempelajari hal keahlian teknis.
@@ -61,7 +62,7 @@ const Hero = () => {
             overflow: 'hidden'
           }}>
             <div style={{ position: 'absolute', top: '10px', left: '10px', right: '10px', bottom: '10px', backgroundColor: 'var(--bg-color)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop" alt="Coding Setup" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%', opacity: 0.8 }} />
+              <img src={heroImage1} alt="Coding Setup" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%', opacity: 0.8 }} />
             </div>
           </div>
         </motion.div>
