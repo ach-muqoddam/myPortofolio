@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaWhatsapp, FaInstagram, FaFacebook } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -10,14 +10,17 @@ const Footer = () => {
         </p>
 
         <div style={{ display: 'flex', gap: '1.5rem', marginBottom: '2rem' }}>
-          <a href="#" style={{ color: 'var(--muted-text)', transition: 'color 0.3s ease' }} onMouseOver={(e) => e.currentTarget.style.color = 'var(--primary)'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--muted-text)'}>
+          <a href="https://github.com/ach-muqoddam" style={{ color: 'var(--muted-text)', transition: 'color 0.3s ease' }} onMouseOver={(e) => e.currentTarget.style.color = 'var(--primary)'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--muted-text)'}>
             <FaGithub size={20} />
           </a>
-          <a href="#" style={{ color: 'var(--muted-text)', transition: 'color 0.3s ease' }} onMouseOver={(e) => e.currentTarget.style.color = 'var(--primary)'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--muted-text)'}>
+          <a href="https://www.linkedin.com/in/ach-muqoddam-783ab5237/" style={{ color: 'var(--muted-text)', transition: 'color 0.3s ease' }} onMouseOver={(e) => e.currentTarget.style.color = 'var(--primary)'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--muted-text)'}>
             <FaLinkedin size={20} />
           </a>
-          <a href="#" style={{ color: 'var(--muted-text)', transition: 'color 0.3s ease' }} onMouseOver={(e) => e.currentTarget.style.color = 'var(--primary)'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--muted-text)'}>
-            <FaTwitter size={20} />
+          <a href="https://www.instagram.com/achmuqoddam/" style={{ color: 'var(--muted-text)', transition: 'color 0.3s ease' }} onMouseOver={(e) => e.currentTarget.style.color = 'var(--primary)'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--muted-text)'}>
+            <FaInstagram size={20} />
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100008751091898" style={{ color: 'var(--muted-text)', transition: 'color 0.3s ease' }} onMouseOver={(e) => e.currentTarget.style.color = 'var(--primary)'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--muted-text)'}>
+            <FaFacebook size={20} />
           </a>
         </div>
 

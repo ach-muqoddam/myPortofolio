@@ -29,13 +29,13 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h3 style={{ fontSize: '1.75rem', marginBottom: '1rem', color: 'var(--primary)' }}>Menggabungkan Kode, Infrastruktur, dan Keamanan</h3>
+            <h3 style={{ fontSize: '1.75rem', marginBottom: '1rem', color: 'var(--primary)' }}>Ekosistem, Infrastruktur, dan Keamanan</h3>
             <p style={{ marginBottom: '1rem', color: 'var(--muted-text)', fontSize: '1.1rem' }}>
-              Saya adalah seorang profesional IT multidisiplin dengan keahlian dalam Software Development, Praktik DevOps, dan Keamanan Siber. Saya percaya bahwa keamanan tidak boleh menjadi hal terakhir yang dipikirkan dalam siklus pengembangan perangkat lunak.
+              Saya adalah seorang profesional IT multidisiplin dengan keahlian dalam Software Development, Praktik DevOps, dan Cybersecurity. Saya percaya bahwa keamanan tidak boleh menjadi hal terakhir yang dipikirkan dalam siklus pengembangan perangkat lunak.
             </p>
-            <p style={{ marginBottom: '1.5rem', color: 'var(--muted-text)', fontSize: '1.1rem' }}>
+            {/* <p style={{ marginBottom: '1.5rem', color: 'var(--muted-text)', fontSize: '1.1rem' }}>
               Misi saya adalah membangun aplikasi yang inovatif dan andal, mengotomatiskan alur kerja deployment (CI/CD), dan memastikan setiap lapisan sistem terlindungi dari kerentanan modern.
-            </p>
+            </p> */}
 
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
               <div className="card" style={{ padding: '1rem' }}>

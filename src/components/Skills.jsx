@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 const skillCategories = [
   {
-    title: 'Development (Programmer)',
+    title: 'Development Programmer',
     skills: [
       { name: 'React & Next.js', level: 85 },
       { name: 'Node.js & Express', level: 85 },
@@ -10,7 +10,7 @@ const skillCategories = [
     ]
   },
   {
-    title: 'DevOps',
+    title: 'Development Operations',
     skills: [
       { name: 'Docker', level: 85 },
       { name: 'Jenkins / GitHub Actions', level: 80 },
@@ -21,7 +21,7 @@ const skillCategories = [
     title: 'Cybersecurity',
     skills: [
       { name: 'SOC Analyst', level: 85 },
-      { name: 'Security Engineer)', level: 85 },
+      { name: 'Security Engineer', level: 85 },
       { name: 'Defensive Security', level: 85 },
     ]
   }

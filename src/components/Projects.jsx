@@ -43,10 +43,10 @@ const Projects = () => {
 
                 <div style={{ display: 'flex', gap: '1rem' }}>
                   <a href={project.github} className="btn btn-outline" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>
-                    <FaGithub size={16} /> Kode
+                    <FaGithub size={16} /> Source
                   </a>
                   <a href={project.live} className="btn btn-primary" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>
-                    <ExternalLink size={16} /> Demo
+                    <ExternalLink size={16} /> View
                   </a>
                 </div>
               </div>

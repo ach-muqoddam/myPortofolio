@@ -33,10 +33,10 @@ const Hero = () => {
           </div>
 
           <div style={{ display: 'flex', gap: '1.5rem' }}>
-            <a href="https://github.com" target="_blank" rel="noreferrer" style={{ color: 'var(--text-color)', transition: 'color 0.3s ease' }} onMouseOver={(e) => e.currentTarget.style.color = 'var(--primary)'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-color)'}>
+            <a href="https://github.com/ach-muqoddam" target="_blank" rel="noreferrer" style={{ color: 'var(--text-color)', transition: 'color 0.3s ease' }} onMouseOver={(e) => e.currentTarget.style.color = 'var(--primary)'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-color)'}>
               <FaGithub size={24} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" style={{ color: 'var(--text-color)', transition: 'color 0.3s ease' }} onMouseOver={(e) => e.currentTarget.style.color = 'var(--primary)'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-color)'}>
+            <a href="https://www.linkedin.com/in/ach-muqoddam-783ab5237" target="_blank" rel="noreferrer" style={{ color: 'var(--text-color)', transition: 'color 0.3s ease' }} onMouseOver={(e) => e.currentTarget.style.color = 'var(--primary)'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-color)'}>
               <FaLinkedin size={24} />
             </a>
             <a href="mailto:ach.adam04@gmail.com" style={{ color: 'var(--text-color)', transition: 'color 0.3s ease' }} onMouseOver={(e) => e.currentTarget.style.color = 'var(--primary)'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-color)'}>

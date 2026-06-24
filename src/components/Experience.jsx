@@ -4,19 +4,19 @@ const experiences = [
   {
     year: '2023 - Sekarang',
     role: 'Tenaga Ahli IT',
-    company: 'Dinas Komunikasi Dan Informatika Kabupaten Sampang.',
+    company: 'Dinas Komunikasi Dan Informatika Kabupaten Sampang',
     description: 'Menjaga Keamanan Sistem Pemerintahan dan Mengelola Infrastruktur IT, Melakukan Troubleshooting Pada Sistem Pemerintahan, Mengembangkan Aplikasi Web Untuk Membantu Proses Pelayanan Publik'
   },
   {
     year: '2023 - 2023',
     role: 'Staff IT',
-    company: 'UPTD Puskesmas Banyuates',
+    company: 'UPTD Puskesmas Banyuates Sampang',
     description: 'Pengelolaan Website, Mendukung proses pengarsipan data dan melakukan entry-data pada sistem, Bertanggung jawab menjaga dan memperbarui data setiap bulan.'
   },
   {
     year: '2016 - 2016',
     role: 'Staff IT',
-    company: 'STIKES Ngudia Husada Madura',
+    company: 'STIKES Ngudia Husada Madura Bangkalan',
     description: 'Analisa data untuk mendukung keputusan operasional, Memperbaiki komputer, Instalasi Operating Sistem, Pengelolan Laboratorium Komputer, Pemasangan Camera CCTV.'
   }
 ];
