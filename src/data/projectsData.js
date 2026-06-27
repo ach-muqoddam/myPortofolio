@@ -1,7 +1,7 @@
 import projectImage1 from '../assets/satudataproject.png';
 import projectImage2 from '../assets/wazuhproject.png';
 import projectImage3 from '../assets/serverproxmox.png';
-import projectImage4 from '../assets/rsmzWeb.png';
+import projectImage4 from '../assets/rsmzweb.png';
 
 export const projectsData = [
   {
