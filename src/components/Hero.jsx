@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Mail } from 'lucide-react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import heroImage1 from '../assets/heroImg1.JPG';
+import heroImage1 from '../assets/heroimg1.jpg';
 
 const Hero = () => {
   return (
