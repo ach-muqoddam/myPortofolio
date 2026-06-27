@@ -1,7 +1,35 @@
 import { motion } from 'framer-motion';
 import { Mail, MapPin, Phone, Send } from 'lucide-react';
+import emailjs from '@emailjs/browser';
+import { useRef, useState } from 'react';
+
+const EMAILJS_SERVICE_ID = 'service_0o0fg5m';
+const EMAILJS_TEMPLATE_ID = 'template_2pnk209';
+const EMAILJS_PUBLIC_KEY = 'o6mi2thy_9cZ6qBz-';
+
 
 const Contact = () => {
+  const formRef = useRef(null);
+  const [status, setStatus] = useState('idle'); // idle | loading | success | error
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus('loading');
+    try {
+      await emailjs.sendForm(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        formRef.current,
+        EMAILJS_PUBLIC_KEY
+      );
+      setStatus('success');
+      formRef.current.reset();
+    } catch (err) {
+      console.error(err);
+      setStatus('error');
+    }
+  };
+
   const ContactInfo = ({ icon: Icon, title, content }) => (
     <div className="contact-info">
       <div className="contact-icon">
@@ -31,7 +59,6 @@ const Contact = () => {
             <p className="contact-description">
               Saya selalu terbuka untuk mendiskusikan pekerjaan pengembangan produk, kolaborasi proyek keamanan sistem, atau tawaran pekerjaan.
             </p>
-
             <div className="contact-info-group">
               <ContactInfo icon={Mail} title="Email" content="ach.adam04@gmail.com" />
               <ContactInfo icon={Phone} title="Telepon" content="+62 813 5927 4120" />
@@ -46,30 +73,50 @@ const Contact = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <form className="card contact-form" onSubmit={(e) => e.preventDefault()}>
+            {/* ↓ tambah ref dan ganti onSubmit */}
+            <form ref={formRef} className="card contact-form" onSubmit={handleSubmit}>
               <div className="form-row">
                 <div className="form-group">
                   <label className="form-label">Nama Anda</label>
-                  <input type="text" className="form-control" placeholder="Masukkan nama Anda" required />
+                  {/* ↓ tambah name attribute di semua input */}
+                  <input name="from_name" type="text" className="form-control" placeholder="Masukkan nama Anda" required />
                 </div>
                 <div className="form-group">
                   <label className="form-label">Email Anda</label>
-                  <input type="email" className="form-control" placeholder="Masukkan email Anda" required />
+                  <input name="from_email" type="email" className="form-control" placeholder="Masukkan email Anda" required />
                 </div>
               </div>
 
               <div className="form-group">
                 <label className="form-label">Subjek</label>
-                <input type="text" className="form-control" placeholder="Subjek pesan" required />
+                <input name="subject" type="text" className="form-control" placeholder="Subjek pesan" required />
               </div>
 
               <div className="form-group">
                 <label className="form-label">Pesan</label>
-                <textarea className="form-control" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                <textarea name="message" className="form-control" placeholder="Tulis pesan Anda di sini..." required></textarea>
               </div>
 
-              <button type="submit" className="btn btn-primary btn-submit">
-                Kirim Pesan <Send size={18} />
+              {/* ↓ feedback status */}
+              {status === 'success' && (
+                <p style={{ color: '#10b981', marginBottom: '1rem', fontSize: '0.9rem', fontWeight: 500 }}>
+                  ✓ Pesan berhasil terkirim! Terima kasih.
+                </p>
+              )}
+              {status === 'error' && (
+                <p style={{ color: '#ef4444', marginBottom: '1rem', fontSize: '0.9rem', fontWeight: 500 }}>
+                  ✗ Gagal mengirim. Coba beberapa saat lagi.
+                </p>
+              )}
+
+              {/* ↓ tombol dengan loading state */}
+              <button
+                type="submit"
+                className="btn btn-primary btn-submit"
+                disabled={status === 'loading'}
+                style={{ opacity: status === 'loading' ? 0.7 : 1, cursor: status === 'loading' ? 'not-allowed' : 'pointer' }}
+              >
+                {status === 'loading' ? 'Mengirim...' : <><Send size={18} /> Kirim Pesan</>}
               </button>
             </form>
           </motion.div>

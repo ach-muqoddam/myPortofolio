@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 const experiences = [
   {
-    year: '2023 - Sekarang',
+    year: '2023 - 2026',
     role: 'Tenaga Ahli IT',
     company: 'Dinas Komunikasi Dan Informatika Kabupaten Sampang',
     description: 'Menjaga Keamanan Sistem Pemerintahan dan Mengelola Infrastruktur IT, Melakukan Troubleshooting Pada Sistem Pemerintahan, Mengembangkan Aplikasi Web Untuk Membantu Proses Pelayanan Publik'

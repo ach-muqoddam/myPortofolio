@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
 import { projectsData } from '../data/projectsData';
+import StatusBadge from './StatusBadge';
 
 const Projects = () => {
   return (
@@ -20,7 +21,7 @@ const Projects = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
             >
-              <div style={{ aspectRatio: '16/9', overflow: 'hidden', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
+              <div style={{ aspectRatio: '16/9', overflow: 'hidden', borderBottom: '1px solid rgba(255,255,255,0.05)'}}>
                 <img
                   src={project.image}
                   alt={project.title}
@@ -41,13 +42,14 @@ const Projects = () => {
                   ))}
                 </div>
 
-                <div style={{ display: 'flex', gap: '1rem' }}>
+                <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
                   <a href={project.github} className="btn btn-outline" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>
                     <FaGithub size={16} /> Source
                   </a>
                   <a href={project.live} className="btn btn-primary" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>
                     <ExternalLink size={16} /> View
                   </a>
+                  <StatusBadge isPublic={project.isPublic} />
                 </div>
               </div>
             </motion.div>
