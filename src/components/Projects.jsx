@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <section id="projects" style={{ backgroundColor: 'var(--bg-color)' }}>
       <div className="container">
-        <h2 className="section-title">Karya & Proyek Terbaru</h2>
+        <h2 className="section-title">Proyek</h2>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem' }}>
           {projectsData.map((project, idx) => (

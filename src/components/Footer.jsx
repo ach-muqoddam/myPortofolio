@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
         <h2 style={{ fontSize: '1.5rem', color: 'var(--primary)', marginBottom: '1rem', fontWeight: 'bold' }}>ACH. MUQODDAM</h2>
         <p style={{ color: 'var(--muted-text)', marginBottom: '2rem', maxWidth: '400px' }}>
-          Membangun solusi perangkat lunak yang aman, modern, dan scalable.
+         Belajar, Belajar, dan Belajar.
         </p>
 
         <div style={{ display: 'flex', gap: '1.5rem', marginBottom: '2rem' }}>
